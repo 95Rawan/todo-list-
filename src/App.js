@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Todo from "./components/Todo";
 
 class App extends Component {
   state = {
@@ -23,7 +24,7 @@ class App extends Component {
   };
 
   render() {
-    return <h1>Hello</h1>;
+    return <Todo todos={this.state.todos} />;
   }
 }
 
